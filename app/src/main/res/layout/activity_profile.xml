@@ -44,5 +44,11 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
         android:text="@string/loginButton" />
+    <Button
+        android:id="@+id/gotochat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gotochat"
+        />
 
 </LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">test_Application</string>
+    <string name="hello_message"> Hello World!</string>
+    <string name="ButtonText">I\'m a button</string>
+    <string name="hello">Hello world</string>
+    <string name="text_GUI"> Look at my GUI </string>
+    <string name="toast_message">Here is more information</string>
+    <string name="CheckBox">Check this out!</string>
+    <string name="Click_Here"> Click Here</string>
+    <string name="Switch_on_off"> Switch on / off</string>
+    <string name="type_here"> Type Here</string>
+    <string name="Email">Enter your email address:</string>
+    <string name="snackbar1"> The switch is now</string>
+    <string name="mailBox">yahan apni mail dalle:  </string>
+    <string name="emailHint">Type email here</string>
+    <string name="passwordBox">Type your password: </string>
+    <string name="yourProfile">Your Profile</string>
+    <string name="yourName">Your Name</string>
+    <string name="nameHint">Enter your name</string>
+    <string name="yourEmail">Your Email:</string>
+    <string name="passowrdHint">type your password here</string>
+    <string name="profilePicture">Your picture: </string>
+    <string name="loginButton">LOGIN</string>
+    <string name="gotochat">gotochat</string>
+    <string name="Send">Send</string>
+    <string name="Receive">Receive</string>
+</resources>
