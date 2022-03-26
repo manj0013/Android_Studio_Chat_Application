@@ -3,6 +3,7 @@ package com.cst2335.test_application;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -38,6 +40,7 @@ public class ChatRoomActivity extends AppCompatActivity {
         send = findViewById(R.id.Send);
         receive = findViewById(R.id.Receive);
         editText = findViewById(R.id.Msg_Box);
+        FrameLayout frameLayout= findViewById(R.id.frameLayout);
         //data from database
         import_Data();
 
@@ -67,18 +70,8 @@ public class ChatRoomActivity extends AppCompatActivity {
         });
         ListView myList = findViewById(R.id.listview);
         myList.setAdapter(myListAdapter = new MyListAdapter());
-        myList.setOnItemLongClickListener((list, view, pos, id) -> {
-            Message msg = elements.get(pos);
-            AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
-            alertDialog.setTitle("Do you want to delete this message")
-                    .setMessage("The selected row is:" + pos + "/nThe database id is:" + id)
-                    .setPositiveButton("yes", (click, arg) -> {
-                        delete_Msg(msg);
-                        elements.remove(pos);
-                        myListAdapter.notifyDataSetChanged();
-                    })
-                    .setNegativeButton("no", (click, arg) -> {
-                    }).create().show();
+        myList.setOnItemLongClickListener((list,view,position,id)->{
+            startActivity(Intent intent );
             return true;
         });
     }

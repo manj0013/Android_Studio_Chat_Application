@@ -24,5 +24,10 @@
     <string name="loginButton">LOGIN</string>
     <string name="gotochat">gotochat</string>
     <string name="Send">Send</string>
+    <string name="Hide">HIDE</string>
+    <string name="isSendMsg">Is a Send Message</string>
     <string name="Receive">Receive</string>
+    <string name="MessageHere">MessageHere</string>
+    <string name="id">ID=</string>
+
 </resources>
